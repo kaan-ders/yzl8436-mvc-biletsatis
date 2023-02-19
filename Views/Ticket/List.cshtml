@@ -1,0 +1,42 @@
+﻿@{
+}
+
+@model List<Ticket>
+
+<h3>Biletler</h3>
+
+<table class="table mt-3">
+    <tr>
+        <th>
+            Seans Tarihi
+        </th>
+        <th>
+            Film
+        </th>
+        <th>
+            Salon
+        </th>
+        <th>
+            Adet
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var ticket in Model)
+    {
+        <tr>
+            <td>
+                @ticket.Session.DateTime
+            </td>
+            <td>
+                @ticket.Session.Movie.Title
+            </td>
+            <td>
+                @ticket.Session.Saloon.No
+            </td>
+            <td>
+                @ticket.Amount
+            </td>
+            <td><a href="#">sil</a></td>
+        </tr>
+    }
+</table>

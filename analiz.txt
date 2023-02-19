@@ -1,0 +1,14 @@
+Bilet -> Bilet ekle/sil
+	* Adet
+	* Tutar
+	* Seans -> Seans CRUD
+		* Salon -> Salon CRUD
+			* No
+			* Kapasite
+		* Film -> themoviedb
+			* Adı
+			* Açıklama
+			* Süre
+			* Resmi
+		* Tarih/Saat
+		* Bilet fiyatı
